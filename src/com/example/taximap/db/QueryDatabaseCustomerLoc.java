@@ -42,7 +42,7 @@ public class QueryDatabaseCustomerLoc  extends AsyncTask<String, Void, Integer>{
 		//Try connecting to the server
 		try{
 		        HttpClient httpclient = new DefaultHttpClient();
-		        HttpPost httppost = new HttpPost("http://ec2-23-22-121-122.compute-1.amazonaws.com/driver_locations.php");
+		        HttpPost httppost = new HttpPost("http://ec2-50-19-20-65.compute-1.amazonaws.com/driver_locations.php");
 		        httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 		        HttpResponse response = httpclient.execute(httppost);		  
 		        HttpEntity entity = response.getEntity();
