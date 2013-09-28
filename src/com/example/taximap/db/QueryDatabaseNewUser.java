@@ -55,7 +55,7 @@ public class QueryDatabaseNewUser  extends AsyncTask<String, Void, Integer>{
 		//Try connecting to server
 		try{
 		        HttpClient httpclient = new DefaultHttpClient();
-		        HttpPost httppost = new HttpPost("http://ec2-23-22-121-122.compute-1.amazonaws.com/create_user.php");
+		        HttpPost httppost = new HttpPost("http://ec2-50-19-20-65.compute-1.amazonaws.com/create_user.php");
 		        httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 		        HttpResponse response = httpclient.execute(httppost);		        	        
 		        HttpEntity entity = response.getEntity();
